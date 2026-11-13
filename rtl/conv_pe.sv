@@ -5,8 +5,8 @@ module conv_pe #(
     parameter real LEAK_RATE = 1,
     parameter int FL = 0,
     parameter int BL = 0,
-    parameter int ROW_BASE,
-    parameter int COL_BASE
+    parameter int ROW_BASE = 0,
+    parameter int COL_BASE = 0
 )(
     Channel spike_in,
     Channel spike_out [9]

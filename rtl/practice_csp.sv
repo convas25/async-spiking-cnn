@@ -19,6 +19,7 @@ endmodule
 module chan;
     Channel #(
         .WIDTH(8),
+        .USE_SHADOW_DRIVERS(1'b0),
         .hsProtocol(P4PhaseBD)
     ) link();
     producer p(.ch_out(link));
